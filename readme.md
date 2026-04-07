@@ -3,3 +3,5 @@
 ## Author: Ulrich Breyman
 
 Das ist meine Durcharbeit mit meinen VSCode einstellungen.
+
+Anmerkung alles außerhalb der Ordner sind Tests
