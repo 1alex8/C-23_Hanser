@@ -23,7 +23,7 @@ int main(){
 
     long cl{al * bl};
 
-    print("int Zahlen haben auf ihrem System {} Bits\n", 8 * sizeof(long));
+    print("long Zahlen haben auf ihrem System {} Bits\n", 8 * sizeof(long));
 
     cout << "Rechnung mit Long : ";
     cout << al << '*' << bl << '=' << cl << '\n';
