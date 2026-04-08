@@ -5,10 +5,20 @@ die funktionen gehen std. mäßig von einem double dt aus.
 
 #include<iostream>
 #include<cmath> //math. funcs
+#include<numbers>//hier wird z.B. pi oder eulersche Zahl definiert.
+/*
+std::print("{:.5f}",  3.14159265);  // 3.14159
+std::print("{:.5e}",  3.14159265);  // 3.14159e+00  (wissenschaftlich)
+std::print("{:.5g}",  3.14159265);  // 3.1416       (kürzer von f/e)
+std::print("{:10.3f}", 3.14159);    // "     3.142"  (Feldbreite 10)
+*/
 
 int main(){
 
     double x{0.0};
+    double y = std::numbers::pi;
+
+    std::cout << y << "   =   " << std::numbers::pi << "\n\n";
 
     std::cout<<"Geben Sie einen Wert für x ein: ";
     std::cin >> x;
