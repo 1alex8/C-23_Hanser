@@ -42,3 +42,10 @@ long double-max: 1.18973e+4932
 
 float und double Zahlen entsprechen  dem IEC 559 (=IEEE754) Standard. 
 */
+
+/*
+Genauigkeit in Dezimalstellen:
+float = ca. 6
+double = ca. 15
+long double= ca. 18
+*/
