@@ -22,3 +22,8 @@
 
 
 copy paste in die .vscode/c_cpp_properites.json
+
+das wird über den Befehl:
+Strg+shift+p
+>C/C++:Edit Configurations Eingestellt.
+Da muss alles auf gcc und g++ und auf die neuen genutzten C Versionen gestellt werden.
