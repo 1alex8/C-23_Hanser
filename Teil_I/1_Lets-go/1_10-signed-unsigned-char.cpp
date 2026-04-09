@@ -14,6 +14,7 @@ int main(){
     std::cout << "Grenzwerte für char in int umgewandelt: \n";
     std::cout << "Minimum = " << std::numeric_limits<char>::min() <<'\n';
     std::cout << "Maximum = " << std::numeric_limits<char>::max() <<'\n';
+    std::cout << "Maximum = " << std::numeric_limits<int>::max() <<'\n';
 
     return 0;
 }
