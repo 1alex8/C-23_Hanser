@@ -13,3 +13,7 @@ wenn du versuchst, einen Wert in einen zu kleinen Datentyp zu "quetschen".
 int main() {
     std::print("Hallo, die Summe ist {}\n", 42); // Viel sauberer!
 }
+
+
+
+//Bereichsoperators :: (engl: scope operator)

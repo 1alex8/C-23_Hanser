@@ -1,3 +1,6 @@
+
+//Bereichsoperators :: (engl: scope operator)
+
 #include<iostream>
 
 int main(){
