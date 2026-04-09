@@ -1,5 +1,7 @@
 /*
 Attribute werden in c++ mit 2 eckigen Klammern signalisiert: [[Attribut]];
+Attribute sind meist Mitteilungen an den Compiler um Warnungen abzuschalten, wie z.B. dass hier die break anweisungen absichtlich weggelassen werden.
+
 fallthrough: [[fallthrough]] signalisiert in einer switch anweisung das das break absichtlich weggelassen wird.
 */
 
