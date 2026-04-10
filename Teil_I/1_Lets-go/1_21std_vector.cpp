@@ -57,6 +57,11 @@ int main(){
     std::vector<double>sortedKosten{kosten};
     // sortedKosten aufsteigend sortieren
     std::ranges::sort(sortedKosten);
+
+    //andere Variante zum sortieren: ist std::sort(vector.begin(), vector.end());
+    std::sort(sortedKosten.begin(), sortedKosten.end()); // wenn man es umdrehen möchte kann man auch einfach begin und end umdrehen
+
+    //nur ein sort ist notwendig. beide zu verwenden war nur zur demonstration
     
 
     //ausgabe mit der laufenden nummer:
