@@ -35,7 +35,7 @@ for (auto p : {p1, p2, p3})
 
 #include<iostream>
 
-enum class farbtyp{rot , gelb ,grün};
+enum class farbtyp{rot , gelb ,grün, blau};
 
 struct punkt{
     int x;
