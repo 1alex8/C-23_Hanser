@@ -1,7 +1,7 @@
 #ifndef PARTICLE_H   // Include-Guard: verhindert doppeltes Einbinden
 #define PARTICLE_H   // wird definiert, damit der Block nur einmal gilt
 
-// Struct-Deklaration – wie in deinem Go-Beispiel
+// Struct-Deklaration
 struct Particle {
     int      lifetime;  // wie lange das Partikel "lebt"
     double   speed;     // Geschwindigkeit
