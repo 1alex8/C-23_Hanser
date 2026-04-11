@@ -27,7 +27,8 @@ g++ main.cpp particle.cpp -o simulation
 ./simulation
 */
 /*
-Ausgabe: --- Tick ---
+Ausgabe: 
+--- Tick ---
 Position: (0, 0)
 Speed:    1.5
 Lifetime: 5
