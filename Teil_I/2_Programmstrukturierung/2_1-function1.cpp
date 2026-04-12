@@ -1,6 +1,6 @@
 #include<iostream>
 
-long long fakultät (int);//Prototyp
+long long fakultät (int);//Prototyp / deklaration
 using namespace std;
 
 int main(){
@@ -14,7 +14,7 @@ int main(){
     return 0;
 }
 
-long long fakultät (int zahl){
+long long fakultät (int zahl){ //funktionsimplemention / definition
     long long fak{1};
     for (int i = 2; i <= zahl; i++){
         fak *= i;
