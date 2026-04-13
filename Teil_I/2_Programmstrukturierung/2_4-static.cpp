@@ -17,6 +17,9 @@ Andernfalls sobald der Wert bekannt ist.
 Anwendungsbeispiel:
 ein Zähler der Zählt wie oft eine func aufgerufen wurde.
 
+Anmerkung: wird nur bei lokalen var's genutzt, 
+weil die globalen ihr Gedächtnis über die Dauer des Progs eh nicht verlieren
+
 */
 
 #include <iostream>
