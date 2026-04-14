@@ -1,3 +1,7 @@
+/*
+Mein Coffee script
+*/
+
 #include <iostream>
 #include <thread>
 #include <chrono>
