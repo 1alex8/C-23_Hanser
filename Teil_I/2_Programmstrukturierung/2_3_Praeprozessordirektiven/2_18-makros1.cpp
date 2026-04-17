@@ -3,6 +3,12 @@
 - #define x definiert ein Symbol x
 - #if B lösst den Compiler die nächste Zeile verarbeiten, falls der konstante Ausdruck B  wahr ist.
 - #ifdef x fragt ob x definiert ist.
+- #ifndef x fragt, ob x nicht definiert ist.
+- #else gibt eine Alternative an.
+- #elif entspricht #else #if
+- #endif beschließt jede mit #if beginnende Konstruktion
+- #elifdef entspricht #elif defined (seit c++23)
+- #elifndef entspricht #elif !defined (seit c++23)
 */
 
 
