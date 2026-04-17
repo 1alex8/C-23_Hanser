@@ -1,3 +1,12 @@
+//Erklärung von Makros:
+/*
+- #define x definiert ein Symbol x
+- #if B lösst den Compiler die nächste Zeile verarbeiten, falls der konstante Ausdruck B  wahr ist.
+- #ifdef x fragt ob x definiert ist.
+*/
+
+
+
 #include <iostream>
 //Zum Testen eines oder beide der folgenden Makros auskommentieren:
 
