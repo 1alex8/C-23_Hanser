@@ -7,3 +7,11 @@ Enthält:    Konstanten,
             Deklarationen globaler Daten und Funktionsprototypen
 
 */
+//klassisches Header Beispiel:
+
+#ifndef MITTELWERT_HPP
+#define MITTELWERT_HPP
+#include <vector>
+
+[[nodiscard]] double mittelwert(std::vector<double>& daten);
+#endif
