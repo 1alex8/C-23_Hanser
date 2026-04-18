@@ -1,3 +1,13 @@
+/*
+Diese Art der Makro nutzung der Makronutzun gist weit verbreitet und hat ihre Vorteile.:
+- Nahc Testabschluss wird das Prog schneller und benötigt weniger Speicher
+- Die Testanweisung können im Programm zum späteren gebrauch stehen bleiben Sie müssen nicht einzeln auskommentiert werden.
+Es gibt jedoch eine Lösung die nur mit Sprachelementen von c++ auskommt(also ohne Makros, die vom Präprozessor verarbeitet werden).
+
+
+*/
+
+
 #include <iostream>
 #include <cmath>
 
