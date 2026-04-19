@@ -3,7 +3,9 @@
 
 #include<string>
 
-int print(const std::string&);
-void func(double);
+namespace abc{
+    void func(double);
+    int print(const std::string&);
+} //; ist nicht notwendig
 
 #endif
