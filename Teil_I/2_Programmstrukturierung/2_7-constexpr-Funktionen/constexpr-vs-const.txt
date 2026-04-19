@@ -1,0 +1,72 @@
+C++ GUIDE: CONST VS. CONSTEXPR
+================================================================
+
+1. GRUNDLAGEN
+----------------------------------------------------------------
+Sowohl 'const' als auch 'constexpr' dienen dazu, Werte als
+unveränderlich zu markieren. Der Hauptunterschied liegt im
+Zeitpunkt, zu dem der Wert evaluiert (berechnet) wird.
+
+2. CONST (Laufzeit-Konstante)
+----------------------------------------------------------------
+- Bedeutung: "Read-only" (Nur Lesezugriff).
+- Zeitpunkt: Der Wert kann erst während das Programm läuft
+  (Runtime) bestimmt werden.
+- Beispiel:
+    int x;
+    std::cin >> x;
+    const int limit = x; // Okay, Wert wird zur Laufzeit fixiert.
+
+- Nutzen: Verhindert versehentliche Änderungen an Variablen,
+  die nach ihrer Initialisierung konstant bleiben sollen.
+
+3. CONSTEXPR (Kompilierzeit-Konstante)
+----------------------------------------------------------------
+- Bedeutung: "Constant Expression".
+- Zeitpunkt: Muss zwingend zur Kompilierzeit (Compile-time)
+  berechnet werden können.
+- Beispiel:
+    constexpr int max_size = 10 + 5; // Okay, Compiler rechnet 15.
+    // constexpr int fehler = x;    // FEHLER, wenn x erst zur
+                                     // Laufzeit bekannt ist.
+
+- Nutzen: Performance-Optimierung. Werte stehen direkt im
+  Maschinencode, Berechnungen während der Ausführung entfallen.
+  Wird benötigt für Array-Größen oder Template-Parameter.
+
+4. CONSTEXPR FUNKTIONEN
+----------------------------------------------------------------
+Eine Funktion, die mit 'constexpr' markiert ist, kann sowohl
+zur Kompilierzeit als auch zur Laufzeit ausgeführt werden.
+
+- Regeln für constexpr-Funktionen:
+  1. Sie müssen einen Rückgabetyp haben (kein void vor C++14).
+  2. Alle Argumente müssen constexpr-kompatibel sein.
+  3. Sie dürfen keine globalen Zustände ändern (müssen "pure" sein).
+
+- Verhalten:
+  Wenn du sie mit constexpr-Argumenten aufrufst, berechnet der
+  Compiler das Ergebnis schon beim Bauen des Programms.
+
+- Beispiel:
+    constexpr int quadrat(int n) {
+        return n * n;
+    }
+
+    // Fall A: Kompilierzeit
+    constexpr int q1 = quadrat(5); // Compiler schreibt '25' in den Code.
+
+    // Fall B: Laufzeit
+    int x = 5;
+    int q2 = quadrat(x);           // Wird wie eine normale Funktion
+                                   // zur Laufzeit aufgerufen.
+
+5. VERGLEICHSTABELLE
+----------------------------------------------------------------
+Eigenschaft      | const              | constexpr
+-----------------|--------------------|-------------------------
+Zeitpunkt        | Laufzeit           | Kompilierzeit
+Berechnung       | Dynamisch möglich  | Muss statisch sein
+Array-Größe      | Nur bedingt        | Immer möglich
+Standard-Wahl    | Für Sicherheit     | Für Performance
+----------------------------------------------------------------
